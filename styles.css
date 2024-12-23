@@ -16,6 +16,14 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent element */
+    font-size: inherit; /* Inherit the font size from the parent element */
+    font-weight: inherit; /* Inherit the font weight */
+    line-height: inherit; /* Inherit the line height */
+}
+
 p {
     color: white;
     opacity: 80%;
@@ -102,7 +110,6 @@ section {
 }
 
 #about-me__image {
-    /* height: 100%; */
     width: auto; /* Adjust image size */
     object-fit: cover;
     flex: 0 0 40%;
@@ -365,10 +372,46 @@ footer {
     background-color: #2d2f36;
     margin-bottom: 0;
     z-index: 1;
+    /* padding: 10px 20px;*/
+    /* text-align: center; */
+    /* box-sizing: border-box; */ 
+    /* opacity: 10%; */
 }
 
 #linkedin-tag {
     max-height: 50px;
-    padding: 0 10px;
+    margin-left: 20px;
 }
 
+/* Project styling */
+.project {
+    border: 2px solid #2d2f36;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+/* Hidden description initially */
+.project-description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Expanded description */
+.project.active .project-description {
+    max-height: 200px; /* Adjust as needed */
+    opacity: 1;
+}
+
+/* Project header styling */
+.project-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
