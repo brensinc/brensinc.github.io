@@ -18,7 +18,8 @@ body {
 
 p {
     color: white;
-    opacity: 80%
+    opacity: 80%;
+    margin-top: 10px;
 }
 
 section {
@@ -360,7 +361,7 @@ section {
 
 footer {
     position: sticky;
-    bottom: 5px;
+    bottom: 0px;
     background-color: #2d2f36;
     margin-bottom: 0;
     z-index: 1;
@@ -368,5 +369,6 @@ footer {
 
 #linkedin-tag {
     max-height: 50px;
+    padding: 0 10px;
 }
 
