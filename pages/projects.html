@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" 
+            id="navbar__logo">Brendan Sinclair</a>
+            <div class="navbar__toggle" 
+            id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="projects.html" class="navbar__links">Projects</a> 
+                </li>
+                <li class="navbar__item">
+                    <a href="resume.html" class="navbar__links">Resume</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="relevant_coursework.html" class="navbar__links">Relevant Coursework</a>  
+                </li>
+                <li class="navbar__item">
+                    <a href="about_me.html" class="navbar__links">About Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+        <div class="main__container">
+            <div class="main__content">
+
+    <section id="projects">
+        <h2 class="header"><span>Projects</span></h2>
+        <ul class="info-blocks">
+            <ul>
+                <h2>Machine Learning</h2>
+                <p>Machine Learning</p>
+                <li class="block">
+                    <div class="block-header">
+                        <h3>⚡Power Network Threat Detection⚡</h3>
+                    </div>
+                    <div class="block-description">
+                        <p>With electricity demand increasing thanks to electrification and the renewable energy revolution, our society is 
+                            increasingly dependent on the electric grid. However, this transition makes cyberattacks on the grid a threat with 
+                            catastrophic implications. In this assignment for EECS 127, I modeled an electric grid using vertices as substations 
+                            and edges as power lines. I then placed sensors at points throughout the power system and chose a subset of sensors to 
+                            be attacked with a random offset value. Formulating and solving a <strong>LASSO optimization problem</strong>, I was 
+                            able to correctly identify every modified sensor in the system <strong>95%</strong> of the time. Not bad for a first 
+                            try at protecting our national power system from cyberattacks!
+                        </p>
+                    </div>
+                </li>
+                <li class="block">
+                    <div class="block-header">
+                        <h3>Flight Delay Classification</h3>
+                    </div>
+                    <div class="block-description">
+                        <p>Have you ever stepped out of your door to head to the airport, looked up at the sky, and thought, “Is my flight going to 
+                            leave on time today?” Thankfully very few of us have to fly out of Chicago Midway Airport regularly, so we rarely <em>expect</em>
+                            delays. However, the relative infrequency of delayed flights means that accuracy wouldn’t be the most appropriate measure. Instead, 
+                            we should evaluate our model performance based on the ROC AUC, representing the relationship between a model’s True Positive 
+                            Rate and False Positive Rate. In this project, I created a <strong>preprocessing pipeline</strong> that incorporates one-hot encoding, 
+                            feature aggregation, and low-frequency handling, optimizing data for input into a <strong>random forest classifier</strong>. 
+                            I achieved <strong>71% ROC AUC</strong> in predicting flight delays exceeding 15 minutes by engineering features from external 
+                            airport metadata, including region, international status, and elevation. <br>
+                            <a href="https://github.com/brensinc/Flight-Predictions-Notebook/blob/main/flight-predictions-notebook-random-forest.ipynb" target="_blank">Check It Out</a>   
+                        </p>
+                    </div>
+                </li>
+                <li class="block">
+                    <div class="block-header">
+                        <h3>Store Sales Timeseries Forecasting</h3>
+                    </div>
+                    <div class="block-description">
+                        <p>Forecasting consumer demand is an essential function in running a grocery store chain. Effective forecasting saves companies 
+                            money by minimizing excess expenditure and it reduces the overstocking that contributes to food waste. <br>
+                            This project focuses on predicting store sales using a <strong>random forest</strong> model enhanced by 
+                            <strong>advanced feature engineering</strong>. Fourier terms were used to model seasonality, while lagged sales data captured 
+                            temporal dependencies, and decomposition techniques improved accuracy by isolating trend and residual components. Exploratory 
+                            data analysis, including periodograms and autocorrelation plots, identified key seasonal patterns and lag relationships, 
+                            guiding feature selection. The final model effectively captures non-linear interactions, providing reliable forecasts to inform
+                            inventory decisions.<br>
+                            <a href="https://github.com/brensinc/Store-Timeseries-Forecasting/blob/main/store-sales-forecasting%20(1).ipynb" target="_blank">Check It Out</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="block">
+                    <div class="block-header">
+                        <h3>Building a Neural Network From Scratch with Numpy</h3>
+                    </div>
+                    <div class="block-description">
+                        <p>This project involved designing and training <strong>Neural 
+                            Networks</strong> (NNs) and <strong>Convolutional Neural Networks</strong> (CNNs) 
+                            to build a deep understanding of their architectures and 
+                            functionality. Key tasks included implementing vectorized 
+                            backpropagation, optimizing models with advanced update 
+                            rules, and enhancing training with techniques like batch 
+                            normalization and dropout. Hyperparameter tuning through 
+                            cross-validation refined model performance, while 
+                            convolutional architectures were developed to handle 
+                            image-related tasks. The project culminated in using PyTorch 
+                            to train and evaluate models on the CIFAR-10 dataset, 
+                            combining theoretical learning with practical application to 
+                            master the foundations of deep learning.
+                        </p>
+                            
+                    </div>
+                </li>
+                <li class="block">
+                    <div class="block-header">
+                        <h3>Spam vs Ham Classification</h3>
+                    </div>
+                    <div class="block-description">
+                        <p>This DATA 100 class project involved distinguishing between spam and non-spam emails. Like the Housing 
+                            Price Regression model, this assignment involved the entire data science lifecycle. Since the data I was 
+                            working with was from emails, I conducted text analysis, using Seaborn and Matplotlib for visualization. I 
+                            then trained a <strong>logistic regression </strong> model to achieve a test accuracy of <strong>86.5%</strong>.
+                        </p>
+                    </div>
+                </li>
+                <li class="block">
+                    <div class="block-header">
+                        <h3>Housing Price Regression</h3>
+                    </div>
+                    <div class="block-description">
+                        <p>I came in the <strong>top 4%</strong> in this Kaggle-style competition and although I would love to share how I did
+                            it, this was a class project for DATA 100, so I unfortunately cannot share my code. I went through the entire data 
+                            science lifecycle in this assignment to prepare the data I received, conduct <strong>EDA</strong>, perform 
+                            <strong>feature engineering</strong>, and build a <strong>linear regression model</strong>.
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+            <ul>
+                <h2>Software & Devices</h2>
+                <p>Models</p>
+                <li class="block">
+                    <div class="block-header">
+                        <h3>⚡Battery SOC Monitor⚡</h3>
+                    </div>
+                    <div class="block-description">
+                        <p>Whether you worship or constantly complain about them, you cannot deny the importance of batteries in modern life. But very few people understand battery 
+                            electrochemistry and even fewer have developed great models for simulating a battery’s <strong>State of Charge</strong> (SOC) and <strong>State of Health</strong> (SOH) dynamics. The 
+                            purpose of this project is not to become one of those experts but to draw from their publications to better understand the <em>really big</em> questions 
+                            such as <em> Why does my 2015 MacBook Air die at 20% SOC?</em> <br>
+
+                            This project defines battery objects and draws from the scientific literature to simulate, monitor, and analyze a battery's SOC and SOH in Python. It has 
+                            electro-thermal modeling for performance and SOC analysis and an interactive <strong>Dash</strong> dashboard for visualization. Additionally, the system 
+                            integrates Discord notifications to alert users about critical battery states such as excess discharge.<br>
+                            <a href="https://github.com/brensinc/BatteryMonitorTool" target="_blank">Check It Out</a>
+                        </p>
+                    </div>
+                </li>
+                <li class="block">
+                    <div class="block-header">
+                        <h3>⚡PV System Soiling Loss Tool⚡</h3>
+                    </div>
+                    <div class="block-description">
+                        <p></p>
+                    </div>
+                </li>
+                <li class="block">
+                    <div class="block-header">
+                        <h3>⚡PPA Probability of Defaults Tool⚡</h3>
+                    </div>
+                    <div class="block-description">
+                        <p></p>
+                    </div>
+                </li>
+
+                <p>Software</p>
+                <li class="block">
+                    <div class="block-header">
+                        <h3>This Website</h3>
+                    </div>
+                    <div class="block-description">
+                        <p>That's right! This website was created by your's truly using HTML, CSS, and JavaScript.<br>
+                            If you're interested in replicating the animation on my homepage, check out this <a href="https://www.youtube.com/watch?v=d620nV6bp0A" target="_blank">video</a>.
+                        </p>
+                    </div>
+                </li>
+                <li class="block">
+                    <div class="block-header">
+                        <h3>Build Your Own World</h3>
+                    </div>
+                    <div class="block-description">
+                        <p>Created a simulation that allows users to build and interact with a virtual world using object-oriented programming concepts.</p>
+                    </div>
+                </li>
+                <p>Devices</p>
+                <li class="block">
+                    <div class="block-header">
+                        <h3>Voice Controlled Car</h3>
+                    </div>
+                    <div class="block-description">
+                        <p>Built voice controlled miniature car by completing the car circuitry on a breadboard and programming a classifier using k-means clustering.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </ul>
+    </section>
+
+            </div>
+        </div>
+
+        <footer>
+            <body>
+                <a href="https://github.com/brensinc" target="_blank"><img id="linkedin-tag" src="../images/github.svg"></a>
+            <a href="https://www.linkedin.com/in/brendanfsinclair/" target="_blank"><img id="linkedin-tag" src="../images/linkedin"></a> 
+            <p>Email: <a href="mailto:brendan.sinclair04@gmail.com">brendan.sinclair04@gmail.com</a></p>
+        </body>
+        </footer>
+
+    <script src="../app.js"></script>
+    </body>
+</html>
