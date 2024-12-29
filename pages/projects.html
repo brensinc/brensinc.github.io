@@ -46,7 +46,7 @@
         <h2 class="header"><span>Projects</span></h2>
         <ul class="info-blocks">
             <ul>
-                <h2>Machine Learning</h2>
+                <h2>Data Science</h2>
                 <p>Machine Learning</p>
                 <li class="block">
                     <div class="block-header">
@@ -144,6 +144,23 @@
                     </div>
                 </li>
 
+                <p>Data Engineering</p>
+                <li class="block">
+                    <div class="block-header">
+                        <h3>MySQL Database Using Temperature/Humidity Sensor</h3>
+                    </div>
+                    <div class="block-description">
+                        <p>Most normal people who want to practice working with SQL databases go online and find data to use, but anyone who has taken EECS 16A/B knows that data is everywhere. Frankly, why would I want to use someone else’s data when I can collect some for myself? So I pulled out my Arduino Uno R3 and a DHT11 Humidity and Temperature sensor and implemented a system that collects humidity and temperature data from my bedroom and adds it to a MySQL database. <br>
+
+                            This project involved reading humidity and temperature data from my sensor to the serial monitor. Afterward, I wrote a Python script using pySerial and MySQL Connector to continuously send data from the serial monitor to my database. To monitor the status of my room, I set the program up to send me Discord notifications when the room temperature is outside of my desired range. <br>
+                            The only drawback to the system I created is that my Arduino doesn’t have wireless capabilities, so it has to be plugged into a computer for the data to be read. My plans are to do a similar project with a different microcontroller that works wirelessly and to incorporate a dashboard to visualize the sensor readings. <br>
+                            
+                            Regardless, I finally have some data to play around with!
+                            
+                        </p>
+                    </div>
+                </li>
+
             </ul>
             <ul>
                 <h2>Software & Devices</h2>
@@ -165,22 +182,7 @@
                         </p>
                     </div>
                 </li>
-                <li class="block">
-                    <div class="block-header">
-                        <h3>⚡PV System Soiling Loss Tool⚡</h3>
-                    </div>
-                    <div class="block-description">
-                        <p></p>
-                    </div>
-                </li>
-                <li class="block">
-                    <div class="block-header">
-                        <h3>⚡PPA Probability of Defaults Tool⚡</h3>
-                    </div>
-                    <div class="block-description">
-                        <p></p>
-                    </div>
-                </li>
+                
 
                 <p>Software</p>
                 <li class="block">
@@ -208,6 +210,12 @@
                     </div>
                     <div class="block-description">
                         <p>Built voice controlled miniature car by completing the car circuitry on a breadboard and programming a classifier using k-means clustering.
+                            <video width="320" height="240" controls>
+                                <source src="../images/audio_car.mp4" type="video/mp4">
+                            
+                              Your browser does not support the video tag.
+                              </video><br>
+                            * I forgot to record videos of us using the voice control feature. Sorry!
                         </p>
                     </div>
                 </li>
